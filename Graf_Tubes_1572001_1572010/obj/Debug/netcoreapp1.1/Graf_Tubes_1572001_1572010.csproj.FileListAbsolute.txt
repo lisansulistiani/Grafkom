@@ -7,3 +7,14 @@ D:\Workspace_VisualStudio\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\
 D:\Workspace_VisualStudio\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.pdb
 D:\Workspace_VisualStudio\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.dll
 D:\Workspace_VisualStudio\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.pdb
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.deps.json
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.runtimeconfig.json
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.runtimeconfig.dev.json
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.dll
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.pdb
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.csprojResolveAssemblyReference.cache
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.csproj.CoreCompileInputs.cache
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.AssemblyInfoInputs.cache
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.AssemblyInfo.cs
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.dll
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.pdb

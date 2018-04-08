@@ -12,7 +12,7 @@ namespace Graf_Tubes_1572001_1572010
         float x, y, z;
         Vector3 triPos;
         float angle = 0;
-        public MyGLWindows(int panjang,int lebar) : base(panjang,lebar)
+        public MyGLWindows(int panjang, int lebar) : base(panjang, lebar)
         {
             Title = "Tubes Grafkom | 1572001 / 1572010";
             x = 0;
@@ -31,14 +31,14 @@ namespace Graf_Tubes_1572001_1572010
             GL.Enable(EnableCap.DepthTest);
             GL.Clear(ClearBufferMask.ColorBufferBit | ClearBufferMask.DepthBufferBit);
             GL.ClearColor(Color.SkyBlue);
-            
+
 
             Matrix4 projection, view;
             projection = Matrix4.CreatePerspectiveFieldOfView(MathHelper.PiOver4, this.Width / this.Height, 0.1f, 100);
             view = Matrix4.LookAt(
                 new Vector3(x, y, z),
                 new Vector3(0, 0, 0),
-                new Vector3(0,1,0));
+                new Vector3(0, 1, 0));
             GL.MatrixMode(MatrixMode.Projection);
             GL.LoadMatrix(ref projection);
             //GL.MatrixMode(MatrixMode.Modelview);
@@ -46,7 +46,7 @@ namespace Graf_Tubes_1572001_1572010
 
             Matrix4 modelView, model, model2;
             model = Matrix4.CreateTranslation(new Vector3(0.6f, 0, 0));
-            
+
             model2 = Matrix4.CreateRotationY(angle);
 
             modelView = Matrix4.Mult(view, model);

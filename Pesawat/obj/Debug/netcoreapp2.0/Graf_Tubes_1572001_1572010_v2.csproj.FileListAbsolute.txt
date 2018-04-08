@@ -1,0 +1,11 @@
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.csproj.CoreCompileInputs.cache
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.AssemblyInfoInputs.cache
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.AssemblyInfo.cs
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.deps.json
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.runtimeconfig.json
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.runtimeconfig.dev.json
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.dll
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.pdb
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.csprojResolveAssemblyReference.cache
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.dll
+D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.pdb

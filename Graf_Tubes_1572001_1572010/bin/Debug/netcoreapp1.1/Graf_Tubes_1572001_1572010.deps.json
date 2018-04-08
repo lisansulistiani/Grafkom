@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v1.1": {
-      "graf_tubes_1572001_1572010/1.0.0": {
+      "Graf_Tubes_1572001_1572010/1.0.0": {
         "dependencies": {
           "OpenTK.NETCore": "1.1.2749.6433"
         },
@@ -14,7 +14,7 @@
           "Graf_Tubes_1572001_1572010.dll": {}
         }
       },
-      "opentk.netcore/1.1.2749.6433": {
+      "OpenTK.NETCore/1.1.2749.6433": {
         "dependencies": {
           "System.Collections.Specialized": "4.0.1",
           "System.ComponentModel.Primitives": "4.1.0"
@@ -23,12 +23,12 @@
           "lib/netstandard1.3/OpenTK.dll": {}
         }
       },
-      "system.collections.nongeneric/4.0.1": {
+      "System.Collections.NonGeneric/4.0.1": {
         "runtime": {
           "lib/netstandard1.3/System.Collections.NonGeneric.dll": {}
         }
       },
-      "system.collections.specialized/4.0.1": {
+      "System.Collections.Specialized/4.0.1": {
         "dependencies": {
           "System.Collections.NonGeneric": "4.0.1"
         },
@@ -36,7 +36,7 @@
           "lib/netstandard1.3/System.Collections.Specialized.dll": {}
         }
       },
-      "system.componentmodel.primitives/4.1.0": {
+      "System.ComponentModel.Primitives/4.1.0": {
         "runtime": {
           "lib/netstandard1.0/System.ComponentModel.Primitives.dll": {}
         }
@@ -44,33 +44,33 @@
     }
   },
   "libraries": {
-    "graf_tubes_1572001_1572010/1.0.0": {
+    "Graf_Tubes_1572001_1572010/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "opentk.netcore/1.1.2749.6433": {
+    "OpenTK.NETCore/1.1.2749.6433": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-6BKtR8G02nx/+tMUnzSLMd4XWabSJyet6zrLcaccEw1LHvByrBA5uMsf9qHNU7Sptvz0T/Xt4X+M1I82cFqygA==",
       "path": "opentk.netcore/1.1.2749.6433",
       "hashPath": "opentk.netcore.1.1.2749.6433.nupkg.sha512"
     },
-    "system.collections.nongeneric/4.0.1": {
+    "System.Collections.NonGeneric/4.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-hMxFT2RhhlffyCdKLDXjx8WEC5JfCvNozAZxCablAuFRH74SCV4AgzE8yJCh/73bFnEoZgJ9MJmkjQ0dJmnKqA==",
       "path": "system.collections.nongeneric/4.0.1",
       "hashPath": "system.collections.nongeneric.4.0.1.nupkg.sha512"
     },
-    "system.collections.specialized/4.0.1": {
+    "System.Collections.Specialized/4.0.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-/HKQyVP0yH1I0YtK7KJL/28snxHNH/bi+0lgk/+MbURF6ULhAE31MDI+NZDerNWu264YbxklXCCygISgm+HMug==",
       "path": "system.collections.specialized/4.0.1",
       "hashPath": "system.collections.specialized.4.0.1.nupkg.sha512"
     },
-    "system.componentmodel.primitives/4.1.0": {
+    "System.ComponentModel.Primitives/4.1.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-sc/7eVCdxPrp3ljpgTKVaQGUXiW05phNWvtv/m2kocXqrUQvTVWKou1Edas2aDjTThLPZOxPYIGNb/HN0QjURg==",
