@@ -616,7 +616,7 @@ namespace Graf_Tubes_1572001_1572010_v2
             //y=0.55
             //x=-0.5-0.5
             //z=0.03 - 0.02
-            GL.Color3(Color.Gray);
+            GL.Color3(Color.LightGray);
             //kiri atas
             GL.Vertex3(-0.14f, -0.7f, 0.025f);
             //kanan atas
@@ -626,7 +626,7 @@ namespace Graf_Tubes_1572001_1572010_v2
             //kiri bawah
             GL.Vertex3(-0.3f, -1, -0.025f);
 
-            //balok buat peluru kiri
+            //balok buat wadah peluru kiri
             GL.Color3(Color.DarkGray);
             //alas
             GL.Vertex3(-0.09, -0.53f, 0.02f);
@@ -789,7 +789,80 @@ namespace Graf_Tubes_1572001_1572010_v2
             //GL.Vertex3(-0.23f, -0.8f, 0.01f);
             //GL.Vertex3(-0.35f, -0.95f, 0);
             //GL.End();
-            
+
+            #endregion
+
+            #region ekor ekor ekor hehe
+            GL.Begin(PrimitiveType.Quads);
+            GL.Color3(Color.DarkGray);
+            GL.Vertex3(-0.1f,-0.8f,0.03f);
+            GL.Vertex3(0.1f, -0.8f, 0.03f);
+            GL.Vertex3(0.05f, -1, 0.03f);
+            GL.Vertex3(-0.05f, -1, 0.03f);
+            //lagi males
+            //kiri
+            GL.Color3(Color.LightGray);
+            GL.Vertex3(-0.045f, -0.85f, 0.03f);
+            GL.Vertex3(-0.045f, -0.88f, 0.15f);
+            GL.Vertex3(-0.045f, -0.9f, 0.15f);
+            GL.Vertex3(-0.045f, -0.9f, 0.03f);
+
+            GL.Vertex3(-0.044f, -0.85f, 0.03f);
+            GL.Vertex3(-0.044f, -0.88f, 0.15f);
+            GL.Vertex3(-0.044f, -0.9f, 0.15f);
+            GL.Vertex3(-0.044f, -0.9f, 0.03f);
+
+            GL.Vertex3(-0.043f, -0.85f, 0.03f);
+            GL.Vertex3(-0.043f, -0.88f, 0.15f);
+            GL.Vertex3(-0.043f, -0.9f, 0.15f);
+            GL.Vertex3(-0.043f, -0.9f, 0.03f);
+
+            GL.Vertex3(-0.042f, -0.85f, 0.03f);
+            GL.Vertex3(-0.042f, -0.88f, 0.15f);
+            GL.Vertex3(-0.042f, -0.9f, 0.15f);
+            GL.Vertex3(-0.042f, -0.9f, 0.03f);
+
+            GL.Vertex3(-0.041f, -0.85f, 0.03f);
+            GL.Vertex3(-0.041f, -0.88f, 0.15f);
+            GL.Vertex3(-0.041f, -0.9f, 0.15f);
+            GL.Vertex3(-0.041f, -0.9f, 0.03f);
+
+            GL.Vertex3(-0.04f, -0.85f, 0.03f);
+            GL.Vertex3(-0.04f, -0.88f, 0.15f);
+            GL.Vertex3(-0.04f, -0.9f, 0.15f);
+            GL.Vertex3(-0.04f, -0.9f, 0.03f);
+
+            //kanan
+            GL.Vertex3(0.045f, -0.85f, 0.03f);
+            GL.Vertex3(0.045f, -0.88f, 0.15f);
+            GL.Vertex3(0.045f, -0.9f, 0.15f);
+            GL.Vertex3(0.045f, -0.9f, 0.03f);
+
+            GL.Vertex3(0.044f, -0.85f, 0.03f);
+            GL.Vertex3(0.044f, -0.88f, 0.15f);
+            GL.Vertex3(0.044f, -0.9f, 0.15f);
+            GL.Vertex3(0.044f, -0.9f, 0.03f);
+
+            GL.Vertex3(0.043f, -0.85f, 0.03f);
+            GL.Vertex3(0.043f, -0.88f, 0.15f);
+            GL.Vertex3(0.043f, -0.9f, 0.15f);
+            GL.Vertex3(0.043f, -0.9f, 0.03f);
+
+            GL.Vertex3(0.042f, -0.85f, 0.03f);
+            GL.Vertex3(0.042f, -0.88f, 0.15f);
+            GL.Vertex3(0.042f, -0.9f, 0.15f);
+            GL.Vertex3(0.042f, -0.9f, 0.03f);
+
+            GL.Vertex3(0.041f, -0.85f, 0.03f);
+            GL.Vertex3(0.041f, -0.88f, 0.15f);
+            GL.Vertex3(0.041f, -0.9f, 0.15f);
+            GL.Vertex3(0.041f, -0.9f, 0.03f);
+
+            GL.Vertex3(0.04f, -0.85f, 0.03f);
+            GL.Vertex3(0.04f, -0.88f, 0.15f);
+            GL.Vertex3(0.04f, -0.9f, 0.15f);
+            GL.Vertex3(0.04f, -0.9f, 0.03f);
+            GL.End();
             #endregion
             SwapBuffers();
         }
