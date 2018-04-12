@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using OpenTK;
+﻿using OpenTK;
 using OpenTK.Graphics.OpenGL;
 using OpenTK.Input;
+using System;
 
 namespace Graf_Tubes_1572001_1572010_v2
 {
@@ -618,84 +616,180 @@ namespace Graf_Tubes_1572001_1572010_v2
             //y=0.55
             //x=-0.5-0.5
             //z=0.03 - 0.02
-            //GL.Color3(Color.Gray);
-            ////kiri atas
-            //GL.Vertex3(-0.14f, -0.56f, 0.029f);
-            ////kanan atas
-            //GL.Vertex3(0.14f, -0.56f, 0.029f);
-            ////kanan bawah
-            //GL.Vertex3(0.3f, -1, -0.05f);
-            ////kiri bawah
-            //GL.Vertex3(-0.3f, -1, -0.05f);
+            GL.Color3(Color.Gray);
+            //kiri atas
+            GL.Vertex3(-0.14f, -0.7f, 0.025f);
+            //kanan atas
+            GL.Vertex3(0.14f, -0.7f, 0.025f);
+            //kanan bawah
+            GL.Vertex3(0.3f, -1, -0.025f);
+            //kiri bawah
+            GL.Vertex3(-0.3f, -1, -0.025f);
+
+            //balok buat peluru kiri
+            GL.Color3(Color.DarkGray);
+            //alas
+            GL.Vertex3(-0.09, -0.53f, 0.02f);
+            GL.Vertex3(-0.12, -0.53f, 0.02f);
+            GL.Vertex3(-0.12, -0.65f, 0.02f);
+            GL.Vertex3(-0.09, -0.65f, 0.02f);
+            //kiri
+            GL.Color3(Color.Gray);
+            GL.Vertex3(-0.09, -0.53f, 0.02f);
+            GL.Vertex3(-0.09, -0.53f, 0.04);
+            GL.Vertex3(-0.09, -0.65f, 0.04);
+            GL.Vertex3(-0.09, -0.65f, 0.02f);
+
+            GL.Vertex3(-0.12, -0.53f, 0.02f);
+            GL.Vertex3(-0.12, -0.53f, 0.04);
+            GL.Vertex3(-0.12, -0.65f, 0.04);
+            GL.Vertex3(-0.12, -0.65f, 0.02f);
+
+            //balok peluru kanan
+            GL.Color3(Color.DarkGray);
+            GL.Vertex3(0.09, -0.53f, 0.03f);
+            GL.Vertex3(0.12, -0.53f, 0.03f);
+            GL.Vertex3(0.12, -0.65f, 0.03f);
+            GL.Vertex3(0.09, -0.65f, 0.03f);
+
+            GL.Color3(Color.Gray);
+            GL.Vertex3(0.09, -0.53f, 0.02f);
+            GL.Vertex3(0.09, -0.53f, 0.04);
+            GL.Vertex3(0.09, -0.65f, 0.04);
+            GL.Vertex3(0.09, -0.65f, 0.02f);
+
+            GL.Vertex3(0.12, -0.53f, 0.02f);
+            GL.Vertex3(0.12, -0.53f, 0.04);
+            GL.Vertex3(0.12, -0.65f, 0.04);
+            GL.Vertex3(0.12, -0.65f, 0.02f);
+
             //lapisan atas
+            GL.Color3(Color.Gray);
+            //lapisan penutup atas trapesium
+            GL.Vertex3(-0.15f, -0.55f, 0.02f);
+            GL.Vertex3(0.15f, -0.55f, 0.02f);
+            GL.Vertex3(0.15f, -0.55f, 0.05f);
+            GL.Vertex3(-0.15f, -0.55f, 0.05f);
+            //lapisan atas trapesium
             GL.Color3(Color.DarkGray);
             GL.Vertex3(-0.15f, -0.55f, 0.04f);
             GL.Vertex3(0.15f, -0.55f, 0.04f);
             GL.Vertex3(0.23f, -0.8f, 0.05f);
             GL.Vertex3(-0.23f, -0.8f, 0.05f);
             //lapisan bawah
+            //alas dari trapesium atas
+            GL.Color3(Color.Black);
             GL.Vertex3(-0.15f, -0.55f, 0.02f);
             GL.Vertex3(0.15f, -0.55f, 0.02f);
             GL.Vertex3(0.23f, -0.8f, 0);
             GL.Vertex3(-0.23f, -0.8f, 0);
-            
+
             //lapisan bawah kiri
-            GL.Color3(Color.DarkGray);
+            GL.Color3(Color.Gray);
+            //lapisan pinggir di kiri trapesium
             GL.Vertex3(-0.15f, -0.55f, 0.02);
             GL.Vertex3(-0.15f, -0.55f, 0.04f);
             GL.Vertex3(-0.23f, -0.8f, 0.05f);
             GL.Vertex3(-0.23f, -0.8f, 0);
-            
+
             //lapisan bawah kanan
-            
+            //lapisan pinggir di kanan trapesium
             GL.Vertex3(0.15f, -0.55f, 0.02f);
             GL.Vertex3(0.15f, -0.55f, 0.04f);
             GL.Vertex3(0.23f, -0.8f, 0.05f);
             GL.Vertex3(0.23f, -0.8f, 0);
             GL.End();
 
-            //lapisan belakang kiri
+            //lapisan belakang kiri segitiga yg dipinggir itu loh
             GL.Begin(PrimitiveType.Quads);
-            GL.Color3(Color.DarkGray);
+
+            //lapisan bawahnya
+            GL.Color3(Color.Black);
             GL.Vertex3(-0.23f, -0.8f, 0);
             GL.Vertex3(0, -0.8f, 0);
-            GL.Vertex3(-0.25f, -0.95f, -0.05f);
+            GL.Vertex3(-0.25f, -0.95f, -0.03f);
             GL.Vertex3(-0.35f, -0.95f, -0.05f);
-            
+
+            //lapisan atasnya
+            GL.Color3(Color.DarkGray);
             GL.Vertex3(-0.23f, -0.8f, 0.05f);
             GL.Vertex3(0, -0.8f, 0.05f);
-            GL.Vertex3(-0.25f, -0.95f, -0.03f);
+            GL.Vertex3(-0.25f, -0.95f, -0.01f);
             GL.Vertex3(-0.35f, -0.95f, -0.03f);
 
-            GL.Color3(Color.Red);
-            GL.Vertex3(-0.23f, -0.8f, -0.03f);
-            GL.Vertex3(-0.35f, -0.95f, 0);
-            GL.Vertex3(-0.35f, -0.95f, 0);
-            GL.Vertex3(-0.23f, -0.8f, -0.03f);
+            //lapisan penutup kiri luar
+            GL.Color3(Color.Gray); 
+            GL.Vertex3(-0.23f, -0.8f, 0);
+            GL.Vertex3(-0.23f, -0.8f, 0.05f);
+            GL.Vertex3(-0.35f, -0.95f, -0.03f);
+            GL.Vertex3(-0.35f, -0.95f, -0.05f);
+
+            //lapisan penutup kiri dalem
+            GL.Vertex3(0, -0.8f, 0);
+            GL.Vertex3(0, -0.8f, 0);
+            GL.Vertex3(-0.24f, -0.95f, -0.01f);
+            GL.Vertex3(-0.24f, -0.95f, -0.03f);
+
+            //lapisan tutup belakang kiri
+            GL.Vertex3(-0.35f, -0.95f, -0.03f);
+            GL.Vertex3(-0.24f, -0.95f, -0.01f);
+            GL.Vertex3(-0.35f, -0.95f, -0.05f);
+            GL.Vertex3(-0.24f, -0.95f, -0.03f);
+
+            //comment aja
+            //GL.Color3(Color.Red);
+            //GL.Vertex3(-0.23f, -0.8f, -0.03f);
+            //GL.Vertex3(-0.35f, -0.95f, 0);
+            //GL.Vertex3(-0.35f, -0.95f, 0);
+            //GL.Vertex3(-0.23f, -0.8f, -0.03f);
 
             //lapisan belakang kanan
-            GL.Color3(Color.DarkGray);
+            GL.Color3(Color.Black);
+            //lapisan atas
             GL.Vertex3(0.23f, -0.8f, 0);
             GL.Vertex3(0, -0.8f, 0);
-            GL.Vertex3(0.25f, -0.95f, -0.05f);
+            GL.Vertex3(0.25f, -0.95f, -0.03f);
             GL.Vertex3(0.35f, -0.95f, -0.05f);
-            
-            GL.Vertex3(0.23f, -0.8f, 0.005f);
-            GL.Vertex3(0, -0.8f, 0.005f);
-            GL.Vertex3(0.25f, -0.95f, -0.01f);
-            GL.Vertex3(0.35f, -0.95f, -0.01f);
 
-            GL.End();
-            GL.Begin(PrimitiveType.Triangles);
+            //lapisan bawah
             GL.Color3(Color.DarkGray);
-            GL.Vertex3(0.23f, -0.8f, 0.03f);
-            GL.Vertex3(0.23f, -0.8f, 0.01f);
-            GL.Vertex3(0.35f, -0.95f, 0);
+            GL.Vertex3(0.23f, -0.8f, 0.05f);
+            GL.Vertex3(0, -0.8f, 0.05f);
+            GL.Vertex3(0.25f, -0.95f, -0.01f);
+            GL.Vertex3(0.35f, -0.95f, -0.03f);
 
-            GL.Vertex3(-0.23f, -0.8f, 0.03f);
-            GL.Vertex3(-0.23f, -0.8f, 0.01f);
-            GL.Vertex3(-0.35f, -0.95f, 0);
+            //lapisan tutup kanan luar
+            GL.Color3(Color.Gray);
+            GL.Vertex3(0.23f, -0.8f, 0);
+            GL.Vertex3(0.23f, -0.8f, 0.05f);
+            GL.Vertex3(0.35f, -0.95f, -0.03f);
+            GL.Vertex3(0.35f, -0.95f, -0.05f);
+
+            //lapisan tutup kanan bawah
+            GL.Vertex3(0.35f, -0.95f, -0.03f);
+            GL.Vertex3(0.24f, -0.95f, -0.01f);
+            GL.Vertex3(0.35f, -0.95f, -0.05f);
+            GL.Vertex3(0.24f, -0.95f, -0.03f);
+
+            //lapisan tutup kanan dalem
+            GL.Vertex3(0, -0.8f, 0);
+            GL.Vertex3(0, -0.8f, 0);
+            GL.Vertex3(0.24f, -0.95f, -0.01f);
+            GL.Vertex3(0.24f, -0.95f, -0.03f);
             GL.End();
+
+            //comment dulu aja
+            //GL.Begin(PrimitiveType.Triangles);
+            //GL.Color3(Color.Red);
+            //GL.Vertex3(0.23f, -0.8f, 0.03f);
+            //GL.Vertex3(0.23f, -0.8f, 0.01f);
+            //GL.Vertex3(0.35f, -0.95f, 0);
+
+            //GL.Vertex3(-0.23f, -0.8f, 0.03f);
+            //GL.Vertex3(-0.23f, -0.8f, 0.01f);
+            //GL.Vertex3(-0.35f, -0.95f, 0);
+            //GL.End();
+            
             #endregion
             SwapBuffers();
         }
