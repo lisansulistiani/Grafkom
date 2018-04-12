@@ -8,8 +8,8 @@ namespace Graf_Tubes_1572001_1572010_v2
     public class MyGLWindows : GameWindow
     {
         float x, y, z;
-        Vector3 triPos;
-        float angle = 0;
+        Vector3 triPos, KiriKanan, peluruKiri, peluruKanan;
+        float angle = 0, tampungKiri=0, tampungKanan=0;
         public MyGLWindows(int panjang, int lebar) : base(panjang, lebar)
         {
             Title = "Tubes Grafkom | 1572001 / 1572010";
@@ -17,6 +17,9 @@ namespace Graf_Tubes_1572001_1572010_v2
             y = 0;
             z = 3;
             triPos = new Vector3(0, 1, 0);
+            KiriKanan = new Vector3(0, -0.5f, 0);
+            peluruKiri = new Vector3(-0.07f, -0.85f, 0);
+            peluruKanan = new Vector3(0.07f, -0.85f, 0);
         }
 
         protected override void OnLoad(EventArgs e)
@@ -42,141 +45,19 @@ namespace Graf_Tubes_1572001_1572010_v2
             //GL.MatrixMode(MatrixMode.Modelview);
             //GL.LoadMatrix(ref view);
 
-            Matrix4 modelView, model, model2;
-            model = Matrix4.CreateTranslation(new Vector3(0, 0, 0));
-
-            model2 = Matrix4.CreateRotationY(angle);
-
+            Matrix4 modelView, model, model2, model3;
+            model = Matrix4.CreateTranslation(KiriKanan);
+            //ini mah ntar hapus aja rotatenya (optional)
+            //model2 = Matrix4.CreateRotationY(angle);
+            model3 = Matrix4.CreateScale(0.7f);
             modelView = Matrix4.Mult(view, model);
-            modelView = Matrix4.Mult(model2, modelView);
+            //modelView = Matrix4.Mult(model2, modelView);
+            modelView = Matrix4.Mult(model3, modelView);
             GL.MatrixMode(MatrixMode.Modelview);
             GL.LoadMatrix(ref modelView);
+            pesawatAneh();
 
-            //comment dulu aja
-            //GL.Begin(PrimitiveType.Triangles);
-
-            ////GL.Color3(Color.Yellow);
-            ////GL.Vertex3(new Vector3(0.2f, -0.2f, -0.2f));
-            ////GL.Vertex3(new Vector3(0.2f, -0.2f, 0.2f));
-            ////GL.Vertex3(new Vector3(-0.2f, -0.2f, 0.2f));
-
-            ////GL.Color3(Color.Yellow);
-            ////GL.Vertex3(new Vector3(-0.2f, -0.2f, 0.2f));
-            ////GL.Vertex3(new Vector3(-0.2f, -0.2f, -0.2f));
-            ////GL.Vertex3(new Vector3(0.2f, -0.2f, -0.2f));
-
-            ////piramida
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(0, 0, 0));
-
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(0, 0, 0));
-
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(0, 0, 0));
-
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(0, 0, 0));
-
-            //GL.End();
-
-            //GL.Begin(PrimitiveType.Quads);
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, -0.2f));
-            //GL.End();
-
-
-            ////balok
-            ////alas
-            //GL.Begin(PrimitiveType.Quads);
-            //GL.Color3(Color.Pink);
-            //GL.Vertex3(new Vector3(0.2f, -0.8f, -0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.8f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.8f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.8f, -0.2f));
-            //GL.End();
-
-            ////samping kanan 
-            //GL.Begin(PrimitiveType.Quads);
-            //GL.Color3(Color.Cornsilk);
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.8f, 0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.8f, -0.2f));
-            //GL.End();
-
-            ////samping kiri 
-            //GL.Begin(PrimitiveType.Quads);
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.8f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.8f, -0.2f));
-            //GL.End();
-
-            ////depan
-            //GL.Begin(PrimitiveType.Quads);
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, 0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.8f, 0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.8f, 0.2f));
-            //GL.End();
-
-            ////belakang
-            //GL.Begin(PrimitiveType.Quads);
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(-0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.2f, -0.2f));
-            //GL.Vertex3(new Vector3(0.2f, -0.8f, -0.2f));
-            //GL.Vertex3(new Vector3(-0.2f, -0.8f, -0.2f));
-            //GL.End();
-
-            ////sayap kanan
-            //GL.Begin(PrimitiveType.Triangles);
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(0, -0.3f, -0.1f));
-            //GL.Vertex3(new Vector3(0.6f, -0.5f, -0.1f));
-            //GL.Vertex3(new Vector3(0, -0.7f, -0.1f));
-            //GL.End();
-
-            ////sayap kiri
-            //GL.Begin(PrimitiveType.Triangles);
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(0, -0.3f, -0.1f));
-            //GL.Vertex3(new Vector3(-0.6f, -0.5f, -0.1f));
-            //GL.Vertex3(new Vector3(0, -0.7f, -0.1f));
-            //GL.End();
-
-            ////sayap tengah
-            //GL.Begin(PrimitiveType.Triangles);
-            //GL.Color3(Color.LightGray);
-            //GL.Vertex3(new Vector3(0, -0.5f, -0.2f));
-            //GL.Vertex3(new Vector3(0, -0.7f, 0.35f));
-            //GL.Vertex3(new Vector3(0, -0.7f, -0.2f));
-            //GL.End();
-
-            ////peluru
-            //GL.Begin(PrimitiveType.Quads);
-            //GL.Color3(Color.Sienna);
-            //GL.Vertex3(new Vector3(-0.02f, -0.2f, 0));
-            //GL.Vertex3(new Vector3(0.02f, -0.2f, 0));
-            //GL.Vertex3(new Vector3(0.02f, 0.1f, 0));
-            //GL.Vertex3(new Vector3(-0.02f, 0.1f, 0));
-            //GL.End();
-
-            ////objek yg ditembak
+            //objek yg ditembak
             //model = Matrix4.CreateTranslation(new Vector3(0.6f, 0.5f, 0));
 
             //model2 = Matrix4.CreateScale(0.2f);
@@ -187,8 +68,116 @@ namespace Graf_Tubes_1572001_1572010_v2
             //GL.LoadMatrix(ref modelView);
             //sasaran();
 
+            model = Matrix4.CreateTranslation(peluruKiri);
+            //ini mah ntar hapus aja rotatenya (optional)
+            model2 = Matrix4.CreateRotationY(angle);
+            model3 = Matrix4.CreateScale(0.2f);
+            modelView = Matrix4.Mult(view, model);
+            modelView = Matrix4.Mult(model2, modelView);
+            modelView = Matrix4.Mult(model3, modelView);
+            GL.MatrixMode(MatrixMode.Modelview);
+            GL.LoadMatrix(ref modelView);
+            peluru();
 
+            
 
+            SwapBuffers();
+        }
+        private void peluru()
+        {
+            //peluru
+            GL.Begin(PrimitiveType.Triangles);
+            //alas dasar
+            GL.Color3(Color.DarkBlue);
+            //titik tengah atas
+            GL.Vertex3(0, 0, 0.03f);
+            //kiri bawah
+            GL.Vertex3(-0.04f, -0.1f, 0);
+            //kanan bawah
+            GL.Vertex3(0.04f, -0.1f, 0);
+
+            //samping kiri
+            GL.Color3(Color.Blue);
+            //kanan bawah
+            GL.Vertex3(-0.02f, -0.1f, 0.06f);
+            //kiri bawah
+            GL.Vertex3(-0.04f, -0.1f, 0);
+            //atas tengah
+            GL.Vertex3(0, 0, 0.03f);
+
+            //samping kanan
+            GL.Color3(Color.Blue);
+            //kiri bawah
+            GL.Vertex3(0.02f, -0.1f, 0.06f);
+            //atas tengah
+            GL.Vertex3(0, 0, 0.03f);
+            //kanan bawah
+            GL.Vertex3(0.04f, -0.1f, 0);
+
+            //segitiga tengah penutup
+            GL.Color3(Color.DarkBlue);
+            //titik tengah
+            GL.Vertex3(0, 0, 0.03f);
+            //kiri
+            GL.Vertex3(-0.02f, -0.1f, 0.06f);
+            //kanan
+            GL.Vertex3(0.02f, -0.1f, 0.06f);
+            GL.End();
+
+            GL.Begin(PrimitiveType.Quads);
+            //kiri
+            GL.Color3(Color.Blue);
+            //sebelah kiri atas
+            GL.Vertex3(-0.04f, -0.1f, 0);
+            //kanan atas
+            GL.Vertex3(-0.02f, -0.1f, 0.06f);
+            //kanan bawah
+            GL.Vertex3(-0.03f, -0.3f, 0.07f);
+            //kiri bawah
+            GL.Vertex3(-0.05f, -0.3f, 0);
+
+            //tengah
+            GL.Color3(Color.DarkBlue);
+            //kiri atas
+            GL.Vertex3(-0.02f, -0.1f, 0.06f);
+            //kanan atas
+            GL.Vertex3(0.02f, -0.1f, 0.06f);
+            //kanan bawah
+            GL.Vertex3(0.03f, -0.3f, 0.07f);
+            //kiri bawah
+            GL.Vertex3(-0.03f, -0.3f, 0.07f);
+
+            //kanan
+            GL.Color3(Color.Blue);
+            //sebelah kiri atas
+            GL.Vertex3(0.02f, -0.1f, 0.06f);
+            //kanan atas
+            GL.Vertex3(0.04f, -0.1f, 0);
+            //kanan bawah
+            GL.Vertex3(0.05f, -0.3f, 0);
+            //kiri bawah
+            GL.Vertex3(0.03f, -0.3f, 0.07f);
+
+            //alas
+            GL.Color3(Color.DarkBlue);
+            //kiri bawah
+            GL.Vertex3(-0.05f, -0.3f, 0);
+            //kiri atas
+            GL.Vertex3(-0.04f, -0.1f, 0);
+            //kanan atas
+            GL.Vertex3(0.04f, -0.1f, 0);
+            //kanan bawah
+            GL.Vertex3(0.05f, -0.3f, 0);
+
+            GL.Color3(Color.Blue);
+            GL.Vertex3(-0.05f, -0.3f, 0);
+            GL.Vertex3(0.05f, -0.3f, 0);
+            GL.Vertex3(0.05f, -0.3f, 0.06f);
+            GL.Vertex3(-0.05f, -0.3f, 0.06f);
+            GL.End();
+        }
+        private void pesawatAneh()
+        {
             #region kepala
             GL.Begin(PrimitiveType.Triangles);
             //alas dasar
@@ -339,7 +328,7 @@ namespace Graf_Tubes_1572001_1572010_v2
             //kiri bawah
             GL.Vertex3(-0.02f, -0.4f, 0.09f);
             GL.End();
-            
+
             GL.Begin(PrimitiveType.Triangles);
             //bagian kanan
             GL.Color3(Color.LightGray);
@@ -373,9 +362,9 @@ namespace Graf_Tubes_1572001_1572010_v2
             GL.Vertex3(0.02f, -0.4f, 0.09f);
             //kiri bawah
             GL.Vertex3(-0.02f, -0.4f, 0.09f);
-            
 
-            
+
+
             //bagian kanan
             GL.Color3(Color.DarkGray);
             //kanan atas
@@ -520,7 +509,7 @@ namespace Graf_Tubes_1572001_1572010_v2
             //kiri atas
             GL.Vertex3(-0.05f, -0.6f, 0);
             //kanan atas
-            GL.Vertex3(-0.03f, -0.6f, 0.06f);            
+            GL.Vertex3(-0.03f, -0.6f, 0.06f);
             //kanan bawah
             GL.Vertex3(-0.02f, -0.7f, 0.05f);
             //kiri bawah
@@ -718,7 +707,7 @@ namespace Graf_Tubes_1572001_1572010_v2
             GL.Vertex3(-0.35f, -0.95f, -0.03f);
 
             //lapisan penutup kiri luar
-            GL.Color3(Color.Gray); 
+            GL.Color3(Color.Gray);
             GL.Vertex3(-0.23f, -0.8f, 0);
             GL.Vertex3(-0.23f, -0.8f, 0.05f);
             GL.Vertex3(-0.35f, -0.95f, -0.03f);
@@ -735,13 +724,6 @@ namespace Graf_Tubes_1572001_1572010_v2
             GL.Vertex3(-0.24f, -0.95f, -0.01f);
             GL.Vertex3(-0.35f, -0.95f, -0.05f);
             GL.Vertex3(-0.24f, -0.95f, -0.03f);
-
-            //comment aja
-            //GL.Color3(Color.Red);
-            //GL.Vertex3(-0.23f, -0.8f, -0.03f);
-            //GL.Vertex3(-0.35f, -0.95f, 0);
-            //GL.Vertex3(-0.35f, -0.95f, 0);
-            //GL.Vertex3(-0.23f, -0.8f, -0.03f);
 
             //lapisan belakang kanan
             GL.Color3(Color.Black);
@@ -778,24 +760,13 @@ namespace Graf_Tubes_1572001_1572010_v2
             GL.Vertex3(0.24f, -0.95f, -0.03f);
             GL.End();
 
-            //comment dulu aja
-            //GL.Begin(PrimitiveType.Triangles);
-            //GL.Color3(Color.Red);
-            //GL.Vertex3(0.23f, -0.8f, 0.03f);
-            //GL.Vertex3(0.23f, -0.8f, 0.01f);
-            //GL.Vertex3(0.35f, -0.95f, 0);
-
-            //GL.Vertex3(-0.23f, -0.8f, 0.03f);
-            //GL.Vertex3(-0.23f, -0.8f, 0.01f);
-            //GL.Vertex3(-0.35f, -0.95f, 0);
-            //GL.End();
 
             #endregion
 
             #region ekor ekor ekor hehe
             GL.Begin(PrimitiveType.Quads);
             GL.Color3(Color.DarkGray);
-            GL.Vertex3(-0.1f,-0.8f,0.03f);
+            GL.Vertex3(-0.1f, -0.8f, 0.03f);
             GL.Vertex3(0.1f, -0.8f, 0.03f);
             GL.Vertex3(0.05f, -1, 0.03f);
             GL.Vertex3(-0.05f, -1, 0.03f);
@@ -864,7 +835,6 @@ namespace Graf_Tubes_1572001_1572010_v2
             GL.Vertex3(0.04f, -0.9f, 0.03f);
             GL.End();
             #endregion
-            SwapBuffers();
         }
 
         public void sasaran()
@@ -918,15 +888,62 @@ namespace Graf_Tubes_1572001_1572010_v2
 
         protected override void OnUpdateFrame(FrameEventArgs e)
         {
+            //puter kiri
             if (Keyboard[Key.W])
             {
                 angle += 0.05f;
                 //z -= 0.1F;
             }
+            //puter kanan
             if (Keyboard[Key.S])
             {
                 angle -= 0.05f;
                 //z += 0.1F;
+            }
+            //tembak peluru
+            if(Keyboard[Key.Space])
+            {
+                for(float y=-0.85f;y<1f;y+=0.0001f)
+                {
+                    peluruKiri.X = tampungKiri;
+                    peluruKanan.X = tampungKanan;
+                    peluruKiri.Y = y;
+                    peluruKanan.Y = y;
+                    model = Matrix4.CreateTranslation(peluruKanan);
+                    //ini mah ntar hapus aja rotatenya (optional)
+                    model2 = Matrix4.CreateRotationY(angle);
+                    model3 = Matrix4.CreateScale(0.2f);
+                    modelView = Matrix4.Mult(view, model);
+                    modelView = Matrix4.Mult(model2, modelView);
+                    modelView = Matrix4.Mult(model3, modelView);
+                    GL.MatrixMode(MatrixMode.Modelview);
+                    GL.LoadMatrix(ref modelView);
+                    peluru();
+                }
+            }
+            //gerak ke kiri
+            if(Keyboard[Key.Left])
+            {
+                if (KiriKanan.X > -1f)
+                {
+                    KiriKanan.X -= 0.1f;
+                    peluruKiri.X -= 0.1f;
+                    peluruKanan.X -= 0.1f;
+                    tampungKiri = peluruKiri.X;
+                    tampungKanan = peluruKanan.X;
+                }
+            }
+            //gerak ke kanan
+            if(Keyboard[Key.Right])
+            {
+                if (KiriKanan.X < 1f)
+                {
+                    KiriKanan.X += 0.1f;
+                    peluruKiri.X += 0.1f;
+                    peluruKanan.X += 0.1f;
+                    tampungKiri = peluruKiri.X;
+                    tampungKanan = peluruKanan.X;
+                }
             }
             if (Keyboard[Key.A])
             {
