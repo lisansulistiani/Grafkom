@@ -8,8 +8,9 @@ namespace Graf_Tubes_1572001_1572010_v2
     public class MyGLWindows : GameWindow
     {
         float x, y, z;
-        Vector3 triPos, KiriKanan, peluruKiri, peluruKanan;
-        float angle = 0, tampungKiri=0, tampungKanan=0;
+        Vector3 triPos, KiriKanan, peluruKiri, peluruKanan,AtasBawah;
+        float angle = 0, tampungKiri=0, tampungKanan=0,tampungAtas,tampungBawah;
+        Matrix4 model, model2, model3, modelView, view;
         public MyGLWindows(int panjang, int lebar) : base(panjang, lebar)
         {
             Title = "Tubes Grafkom | 1572001 / 1572010";
@@ -47,10 +48,12 @@ namespace Graf_Tubes_1572001_1572010_v2
 
             Matrix4 modelView, model, model2, model3;
             model = Matrix4.CreateTranslation(KiriKanan);
+            model2 = Matrix4.CreateTranslation(AtasBawah);
             //ini mah ntar hapus aja rotatenya (optional)
             //model2 = Matrix4.CreateRotationY(angle);
             model3 = Matrix4.CreateScale(0.7f);
             modelView = Matrix4.Mult(view, model);
+            modelView = Matrix4.Mult(model2, modelView);
             //modelView = Matrix4.Mult(model2, modelView);
             modelView = Matrix4.Mult(model3, modelView);
             GL.MatrixMode(MatrixMode.Modelview);
@@ -943,6 +946,21 @@ namespace Graf_Tubes_1572001_1572010_v2
                     peluruKanan.X += 0.1f;
                     tampungKiri = peluruKiri.X;
                     tampungKanan = peluruKanan.X;
+                }
+            }
+            //gerak ke atas
+            if (Keyboard[Key.Up])
+            {
+                if (AtasBawah.Y < 1f)
+                {
+                    AtasBawah.Y += 0.1f;
+                }
+            }
+            if (Keyboard[Key.Down])
+            {
+                if (AtasBawah.Y > -1f)
+                {
+                    AtasBawah.Y -= 0.1f;
                 }
             }
             if (Keyboard[Key.A])

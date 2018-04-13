@@ -18,3 +18,14 @@ D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1
 D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.AssemblyInfo.cs
 D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.dll
 D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.pdb
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.deps.json
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.runtimeconfig.json
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.runtimeconfig.dev.json
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.dll
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\bin\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.pdb
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.csproj.CoreCompileInputs.cache
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.AssemblyInfoInputs.cache
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.AssemblyInfo.cs
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.dll
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Graf_Tubes_1572001_1572010\obj\Debug\netcoreapp1.1\Graf_Tubes_1572001_1572010.pdb

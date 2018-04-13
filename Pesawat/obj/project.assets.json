@@ -2635,7 +2635,7 @@
       ]
     },
     "System.Threading.Thread/4.0.0": {
-      "sha512": "bFi2RtN6Mt+I0jhx/AIXIbsxdUWTUzd1086ASQ+pr73hjmyphNyiPrmZejUYV3KRs6ppQNx1t2EkMt/oHKlGeQ==",
+      "sha512": "4fgCRytIKdYGahx+Jhb7dwMTM1RZWtvrICiNBBydLmRi5OkjS+B1Gp7k8aQg5qipPCWP9q/y6F/4xUoPSFum2g==",
       "type": "package",
       "path": "system.threading.thread/4.0.0",
       "files": [
@@ -2680,28 +2680,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lisansulistiani\\.nuget\\packages\\": {},
+    "C:\\Users\\Anthony\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "D:\\sansan\\Kuliah\\Maranatha\\Semester 6 Genap 2017 2018\\Grafkom\\tubes\\Graf_Tubes_1572001_1572010\\Pesawat\\Graf_Tubes_1572001_1572010_v2.csproj",
+      "projectUniqueName": "C:\\Users\\Anthony\\Documents\\VisualStudioProject\\Grafkom\\Pesawat\\Graf_Tubes_1572001_1572010_v2.csproj",
       "projectName": "Graf_Tubes_1572001_1572010_v2",
-      "projectPath": "D:\\sansan\\Kuliah\\Maranatha\\Semester 6 Genap 2017 2018\\Grafkom\\tubes\\Graf_Tubes_1572001_1572010\\Pesawat\\Graf_Tubes_1572001_1572010_v2.csproj",
-      "packagesPath": "C:\\Users\\lisansulistiani\\.nuget\\packages\\",
-      "outputPath": "D:\\sansan\\Kuliah\\Maranatha\\Semester 6 Genap 2017 2018\\Grafkom\\tubes\\Graf_Tubes_1572001_1572010\\Pesawat\\obj\\",
+      "projectPath": "C:\\Users\\Anthony\\Documents\\VisualStudioProject\\Grafkom\\Pesawat\\Graf_Tubes_1572001_1572010_v2.csproj",
+      "packagesPath": "C:\\Users\\Anthony\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Anthony\\Documents\\VisualStudioProject\\Grafkom\\Pesawat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\lisansulistiani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Anthony\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],

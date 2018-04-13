@@ -9,3 +9,14 @@ D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1
 D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.csprojResolveAssemblyReference.cache
 D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.dll
 D:\sansan\Kuliah\Maranatha\Semester 6 Genap 2017 2018\Grafkom\tubes\Graf_Tubes_1572001_1572010\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.pdb
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.csprojResolveAssemblyReference.cache
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.csproj.CoreCompileInputs.cache
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.AssemblyInfoInputs.cache
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.AssemblyInfo.cs
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.deps.json
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.runtimeconfig.json
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.runtimeconfig.dev.json
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.dll
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\bin\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.pdb
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.dll
+C:\Users\Anthony\Documents\VisualStudioProject\Grafkom\Pesawat\obj\Debug\netcoreapp2.0\Graf_Tubes_1572001_1572010_v2.pdb
